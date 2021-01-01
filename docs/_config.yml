@@ -21,7 +21,7 @@
 title: Raks8877 Blogs
 email: beckrakesh@gmail.com.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi, this is Rakesh Beck, a computer/embedded system enthusiast. With this blog series i hope to explain stuffs to people, also keep this as my goto for reference.
+  Hi, this is Rakesh Beck, a computer/embedded system enthusiast. This blog series will be ELI5 related to computers.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: raks8877
