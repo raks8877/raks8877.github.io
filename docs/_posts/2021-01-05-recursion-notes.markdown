@@ -28,7 +28,7 @@ categories: jekyll update
 ---
 <div style="background-color: #EEEEFF">
 <!-- #EEEEFF -->
-<b>Problem</b>: Find fibo series
+<b>Problem</b>: Find Nth fibo number
 <br />
 
 <b>Recursion math notation</b>: 
@@ -36,7 +36,12 @@ categories: jekyll update
 
 <br />
 <b>Recursion Visual</b>: 
-<img src="/images/prob1/recursion1.jpg" alt="Double LinkList diagram">
+<img src="/images/prob1/recursion1.jpg" alt="recursion visual">
+<br />
+
+<br />
+<b>Iteration Visual</b>: 
+<img src="/images/prob1/iteration1.jpg" alt="iteration visual">
 <br />
 
 </div>
@@ -100,6 +105,11 @@ else
 <br />
 <b>Recursion Visual</b>: 
 <img src="/images/prob1/recursion1.jpg" alt="Double LinkList diagram">
+<br />
+
+<br />
+<b>Iteration Visual</b>: 
+<img src="/images/prob1/iteration1.jpg" alt="iteration visual">
 <br />
 
 </div>
@@ -182,6 +192,10 @@ else
 <img src="/images/prob1/recursion1.jpg" alt="Double LinkList diagram">
 <br />
 
+<br />
+<b>Iteration Visual</b>: 
+<img src="/images/prob1/iteration1.jpg" alt="iteration visual">
+<br />
 </div>
 <table class="center" >
   <tr>
