@@ -1,0 +1,12 @@
+To run locally (inside docs dir):
+jekyll serve --host=0.0.0.0 --config _config.yml
+
+For watermark (GimP):
+1) open the image on which watermark needs to be added
+2) file-> open as layer  -> (select your logo (images/watermark))
+3) Resize the logo
+    (right bottom side find the logo)
+    right click -> scale layer -> 250 x 52
+4) Position the logo to the desired logo
+5) Make it transparent
+    make opacity to 5
