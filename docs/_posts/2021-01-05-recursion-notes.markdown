@@ -15,7 +15,13 @@ categories: jekyll update
   <ul>
     <li><a href="#what_is_recursion">1.1 What is Recursion?</a></li>
     <li><a href="#recursion_traversal">1.2 Recursion Traversals</a></li>
-  </ul>    
+  </ul>
+  <li><a href="#linked_list_chapter">2: Linked List Recursion</a></li>
+  <ul>
+    <li><a href="#link_list_single_list_reversal">2.1 Post Recursion</a></li>
+    <li><a href="#link_list_add_two_numbers">2.2 Pre Recursion</a></li>
+  </ul>
+
   <!-- <li><a href="#prob1">2: Fibo series</a></li>
   <li><a href="#prob2">3: LinkList</a></li>
   <ul>
@@ -26,6 +32,11 @@ categories: jekyll update
 
 
 {% include_relative recursion/introduction.html %}
+
+<!-- LinkList section -->
+{% include_relative recursion/linked_list_chapter.html %}
+{% include_relative recursion/linked_list_single_list_reversal.html %}
+{% include_relative recursion/linked_list_add_two_numbers.html %}
 
 
 

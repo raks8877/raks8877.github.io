@@ -1,0 +1,75 @@
+<!-- =============================================================================================== -->
+<div id="link_list_add_two_numbers"></div>
+* Example of Pre Recursion
+---
+---
+<div style="background-color: #EEEEFF">
+<!-- #EEEEFF -->
+<b>Problem</b>: Given two numbers using Linked List in reverse order. Return their sum as a Linked List
+<br />
+
+<b>Example</b>: 
+Suppose two numbers are 567 and 489. In Linked list they are represented in reverse.
+<br />
+Number1 = 7 -> 6 -> 5
+Number2 = 9 -> 8 -> 4
+<br />
+Desired Output: 6 -> 5 -> 0 -> 1
+
+<br />
+<!-- <b>Iteration Visual</b>: 
+<img src="/images/prob1/recursion1.jpg" alt="recursion visual">
+<br /> -->
+
+<br />
+<b>Recursion Visual</b>: 
+<img src="/images/recursion/linked_list_add_two_number.png" alt="recursion visual">
+<br />
+
+</div>
+<table  >
+    <!-- <thead>
+        <tr>
+            <th colspan="2" style="text-align:center">
+            CODE
+          </th>
+        </tr>
+    </thead> -->
+  <tr>
+    <th>
+        Recursion
+    </th>
+  </tr>
+  <tr>
+    <td>
+{% highlight c++ %}
+ListNode *pre_recursion(ListNode *l1, ListNode *l2, int carry)
+{
+    if(l1 == NULL &&
+       l2 == NULL &&
+       carry == 0)
+    return NULL;
+
+    int sum = (l1 == NULL?0:l1->val) + 
+              (l2 == NULL?0:l2->val) + 
+              carry;
+    
+    carry = sum / 10;
+    sum %= 10;
+
+    ListNode *head = new ListNode(sum);
+    head->next = pre_recursion(l1 == NULL?l1:l1->next, 
+                               l2 == NULL?l2:l2->next,
+                               carry);
+
+    return head;
+}
+{% endhighlight %}
+    </td>
+  </tr>
+</table>
+
+<br />
+<!-- =============================================================================================== -->
+
+    

@@ -1,0 +1,70 @@
+<!-- =============================================================================================== -->
+<div id="delete_a_node_linked_list"></div>
+* Delete a Node in Linked List
+---
+---
+<div style="background-color: #EEEEFF">
+<!-- #EEEEFF -->
+<b>Problem</b>: Given a pointer to the Linked List, remove that node from the list.
+<br />
+
+<b>Example</b>: 
+<!-- <img src="/images/prob1/mathnotation1.jpg" alt="Double LinkList diagram"> -->
+
+<br />
+<b>Iteration Visual</b>: 
+<!-- <img src="/images/prob1/recursion1.jpg" alt="recursion visual"> -->
+<br />
+
+<br />
+<b>Recursion Visual</b>: 
+<!-- <img src="/images/prob1/iteration1.jpg" alt="iteration visual"> -->
+<br />
+
+</div>
+<table  >
+    <!-- <thead>
+        <tr>
+            <th colspan="2" style="text-align:center">
+            CODE
+          </th>
+        </tr>
+    </thead> -->
+  <tr>
+    <th>
+        Iteration
+    </th>
+    <th>
+        Recursion
+    </th>
+  </tr>
+  <tr>
+    <td class="inner">
+{% highlight c++ %}
+
+{% endhighlight %}
+    </td>
+    <td>
+{% highlight c++ %}
+ListNode* recursion(ListNode *head)
+{
+    if(head == NULL || head->next == NULL)
+        return head;
+    
+    ListNode *p = recursion(head->next);
+    int tmp = p->val;
+    p->val = head->val;
+    head->val = tmp;
+    
+    if(head->next == p)
+        head->next = NULL;
+    return p;
+}
+{% endhighlight %}
+    </td>
+  </tr>
+</table>
+
+<br />
+<!-- =============================================================================================== -->
+

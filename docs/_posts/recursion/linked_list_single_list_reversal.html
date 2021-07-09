@@ -1,0 +1,62 @@
+<!-- =============================================================================================== -->
+<div id="link_list_single_list_reversal"></div>
+* Example of Post Recursion
+---
+---
+<div style="background-color: #EEEEFF">
+<!-- #EEEEFF -->
+<b>Problem</b>: Given a Linked List, return the reversed list.
+<br />
+
+<b>Example</b>: Suppose the given Linked List is: 1 -> 2 -> 3 -> 4 -> 5
+<br />
+Desired Output: 5 -> 4 -> 3 -> 2 -> 1
+<!-- <img src="/images/prob1/mathnotation1.jpg" alt="Double LinkList diagram"> -->
+
+<br />
+<!-- <b>Iteration Visual</b>: 
+<img src="/images/prob1/recursion1.jpg" alt="recursion visual">
+<br /> -->
+
+<br />
+<b>Recursion Visual</b>: 
+<img src="/images/recursion/linked_list_reversal.png" alt="recursion visual">
+<br />
+
+</div>
+<table  >
+    <!-- <thead>
+        <tr>
+            <th colspan="2" style="text-align:center">
+            CODE
+          </th>
+        </tr>
+    </thead> -->
+  <tr>
+    <th>
+        Recursion
+    </th>
+  </tr>
+  <tr>
+    <td>
+{% highlight c++ %}
+ListNode* post_recursion(ListNode* head) 
+{
+  if (head == NULL || 
+      head->next == NULL) 
+      return head;
+  
+  ListNode *p = post_recursion(head->next);
+  head->next->next = head;
+  head->next = NULL;
+  return p;
+}
+{% endhighlight %}
+    </td>
+  </tr>
+</table>
+
+<br />
+<!-- =============================================================================================== -->
+
+    
